@@ -1,0 +1,17 @@
+
+
+/*------------------ nan_bar ----------------------*/
+.logo_arg {
+    width: 120px;
+    padding: 0;
+    margin: 0;
+}
+/*------------------ Button redes -----------------------*/
+.redes {
+    font-size: 2rem;
+}
+
+button.redes {
+    padding: 0;
+    margin: 0;
+}
