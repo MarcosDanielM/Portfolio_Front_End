@@ -47,3 +47,25 @@ button.redes {
     padding: 2%;           
 }
  
+
+/*------------------------- Educación ----------------------------------*/
+
+.educa {
+    margin: 15px 0;
+    float: right;
+}
+
+.img_educ {
+    width: 100px;
+}
+
+.logos.educ {
+    float: left;
+}
+
+.idiomas, .progress {
+    width:80%;
+    margin: auto;
+    font-size: 1.3rem;
+    height:30px;
+}
