@@ -1,0 +1,49 @@
+/*-----------------General----------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+section.card {
+    margin: 2% 2%;
+    border-radius: 32px;
+    padding: 20px;
+}
+
+/*------------------- header ---------------------------*/
+/*-------------header superior-----------------*/
+.logo_arg{
+    height: 80px;
+}
+.redes {
+    font-size: 2.5rem;
+}
+
+button.redes {
+    padding: 0;
+    margin: 0;
+
+}
+
+/*-------------header inferior-----------------*/
+
+#banner{
+    border-radius: 32px 32px 0px 0px;
+    width: 100%;
+}
+
+
+/*---------------------Cont My photo------------------------------*/
+/*
+.profile-image {
+    position: relative;
+
+}*/
+
+.about_con {
+    text-align: justify;
+    padding: 2%;           
+}
+ 
