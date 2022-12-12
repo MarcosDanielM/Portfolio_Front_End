@@ -1,7 +1,55 @@
+/*--------------------------- Google fONT -------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;800&display=swap'); 
+
 /*-----------------General----------------*/
+:root {
+    --header-height: 3rem;
+    --nav-width: 324px;
+  
+    /* Grosor de la Fuente */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+  
+    /* Colores */
+   --first-color: #5b5553;
+    --first-color-dark: #ea3057;
+    --first-color-darken: #5b5553;
+    --text-color: #191919;
+    --first-color-light: #b1a7a5;
+    --first-color-light-dark: #ea3057;
+    --first-color-lighten: #e5e5e5;
+  
+    /* Fuente y Tipografía */
+    --body-font: 'Inter', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+       
+    /* z-index */
+    --z-fixed: 100;
+  }
+  
+  @media screen and (min-width: 768px) {
+    :root {
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 0.875rem;
+      --smaller-font-size: 0.813rem;
+    }
+  }
+
+
 * {
-    box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
 
 body {
     background-color: bisque;
@@ -13,6 +61,7 @@ section.card {
 }
 
 /*------------------- header ---------------------------*/
+
 /*-------------header superior-----------------*/
 .logo_arg{
     height: 80px;
@@ -36,11 +85,11 @@ button.redes {
 
 
 /*---------------------Cont My photo------------------------------*/
-/*
+
 .profile-image {
     position: relative;
 
-}*/
+}
 
 .about_con {
     text-align: justify;
@@ -69,3 +118,65 @@ button.redes {
     font-size: 1.3rem;
     height:30px;
 }
+
+/*<!--educación-->*/
+
+.educa {
+    margin: 15px 0;
+    float: right;
+}
+
+.img_educ {
+    width: 100px;
+}
+
+.logos.educ {
+    float: left;
+}
+
+/*------------------ Hard and soft skills ------------------------*/
+.hards {
+    font-size: 5rem;
+}
+
+.html5 {
+    color: #E34C26;
+}
+
+.css3 {
+   color: #2965f1;
+}
+
+.sass {
+    color:  #cc6699;
+}
+
+.bootstrap5 {
+    color: #563d7c;
+}
+
+.git-color {
+   color: #F1502F;
+}
+
+.js_logo {
+    color:#F0DB4F;
+}
+.nodejs {
+    color: #68A063;
+}
+
+
+/*------------------------------------------------------ Progress --------------------------------------------------*/
+
+
+
+/*------MEDIA QUERIES----------
+@media only screen and (min-width: 768px) {
+    .fila_uno, .fila_dos {   
+        flex-direction: column;
+      }
+
+  }
+*/
+  
