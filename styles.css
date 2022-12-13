@@ -54,9 +54,9 @@
 body {
     background-color: bisque;
 }
-section.card {
+section.card, footer.pie {
     margin: 2% 2%;
-    border-radius: 32px;
+    border-radius: 32px; 
     padding: 20px;
 }
 
@@ -166,6 +166,11 @@ button.redes {
     color: #68A063;
 }
 
+
+/*-----------------------------------------------------------------------------*/
+.name-email {
+    display: inline-flex;   
+}
 
 /*------------------------------------------------------ Progress --------------------------------------------------*/
 
