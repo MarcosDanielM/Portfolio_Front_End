@@ -48,7 +48,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
 
 body {
@@ -134,6 +135,12 @@ button.redes {
     float: left;
 }
 
+.modal-dialog {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
 /*------------------ Hard and soft skills ------------------------*/
 .hards {
     font-size: 5rem;
@@ -167,21 +174,10 @@ button.redes {
 }
 
 
-/*-----------------------------------------------------------------------------*/
-.name-email {
-    display: inline-flex;   
+
+
+/*------------------------------------------------------ Proyect --------------------------------------------------*/
+
+.proyect-card {
+   border-radius: 10px; 
 }
-
-/*------------------------------------------------------ Progress --------------------------------------------------*/
-
-
-
-/*------MEDIA QUERIES----------
-@media only screen and (min-width: 768px) {
-    .fila_uno, .fila_dos {   
-        flex-direction: column;
-      }
-
-  }
-*/
-  
