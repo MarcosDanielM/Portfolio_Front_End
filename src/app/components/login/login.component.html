@@ -1,0 +1,40 @@
+<section class="d-flex justify-content-center align-items-center min-vh-100 w-100 bg-image gradient-custom">
+  <div class="form-box bg-dark">
+    <div class="form-value">
+      <h1 class="m-5 text-center text-light fw-bold">Iniciar Sesión</h1>
+      <form [formGroup]="form" class="m-2" (ngSubmit)="onSubmit()">
+        <div class="mb-3 inputbox">
+          <i class="fa-solid fa-envelope me-2 text-light"></i>
+          <label for="exampleInputEmail1" class="form-label text-light fw-bold">Email</label>
+          <input type="email" formControlName="email"
+            [ngClass]="{'is-invalid': email?.invalid && email?.touched, 'is-valid': email?.valid && email?.touched}"
+            class="form-control text-black fw-bold" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <!--<div *ngIf="Email?.invalid && email?.touched">
+            <p *ngIf="Email?.errors.required" class="text-danger fw-bold">
+              El email es requerido.
+            </p>
+            <p *ngIf="Email?.errors.email" class="text-danger fw-bold">
+              El formato del email debe ser válido.
+            </p>
+          </div>-->
+        </div>
+        <div class="mb-3 inputbox">
+          <i class="fa-solid fa-lock me-2 text-light"></i>
+          <label for="exampleInputPassword1" class="form-label text-light fw-bold">Contraseña</label>
+          <input type="password" formControlName="password"
+            [ngClass]="{'is-invalid': password?.invalid && password?.touched, 'is-valid': password?.valid && password?.touched}"
+            class="form-control text-black fw-bold" id="exampleInputPassword1">
+          <!--div *ngIf="Password?.invalid && password?.touched">
+            <p *ngIf="Password?.errors.required" class="text-danger fw-bold">
+              La contraseña es requerida.
+            </p>
+            <p *ngIf="Password?.errors.minlength" class="text-danger fw-bold">
+              La contraseña debe tener al menos 8 caracteres.
+            </p>
+          </div>-->
+        </div>
+        <button type="submit" class="btn btn-success fw-bold btn-lg btn-block mt-3">Enviar</button>
+      </form>
+    </div>
+  </div>
+</section>

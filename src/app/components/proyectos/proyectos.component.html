@@ -1,0 +1,70 @@
+<section class="card border-0 shadow-lg p-4 mb-4 bg-white">
+  <div class="container mt-2">
+    <h3 class="h2 m-3 text-primary text-center">
+      <i class="fa-solid fa-code"></i>
+      Proyectos
+    </h3>
+    <!--Boton para agregar-->
+      <div class="btn-edit btn-show ">
+        <a href="#" class="btn-right"
+          data-bs-toggle="modal"
+          data-bs-target="#modal-agregar-pro"
+        >
+          <i class="fa fa-plus edit-fa">
+          </i>
+        </a>
+      </div>
+
+
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col" *ngFor="let proyecto of pro">
+          <!--Botones para editar y eliminar-->
+
+          <div class="d-flex align-items-center justify-content-center m-2">
+            <div class="btn-edit trash ps-0 btn-show">
+              <a href="#" class="btn-right"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-edicion-pro"
+              >
+                <i class="fa fa-solid fa-pen edit-fa"></i>
+              </a>
+              <a href="#" class="btn-right"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-eliminar"
+              >
+                <i class="fa fa-solid fa-trash edit-fa"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card shadow-sm">
+            <img [src]="proyecto.img" class="img-fluid proyect-card" alt="Portfolio">
+            <div class="card-body">
+              <h4 class="text-center text-primary p-2">{{proyecto.titulo}}</h4>
+              <p class="card-text">{{proyecto.descripcion}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a
+                    href="{{proyecto.codigo}}"
+                    target="_blank"
+                    class="btn btn-outline-primary"
+                    >Code
+                  </a>
+                  <a
+                    href="{{proyecto.demo}}"
+                    target="_blank"
+                    class="btn btn-outline-primary"
+                    >Demo
+                  </a>
+                </div>
+                <p class="text-primary h5">{{proyecto.realizacion}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

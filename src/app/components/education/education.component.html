@@ -1,0 +1,67 @@
+<section class="card border-0 shadow-lg p-4 mb-4 bg-white">
+  <div class="container mt-2">
+    <h3 class="h2 pb-3 pt-3 text-primary text-center">
+      <i class="fa-solid fa-book"></i>
+      Educación
+    </h3>
+    <!--Boton para agregar-->
+    <div class="btn-edit">
+      <a href="#" class="btn-right btn-show"
+        data-bs-toggle="modal"
+        data-bs-target="#modal-agregar-edu"
+      >
+        <i class="fa fa-plus edit-fa">
+        </i>
+      </a>
+    </div>
+
+  <ul class="p-3">
+    <li *ngFor="let educacion of edu; let i = index">
+      <div class="row d-flex m-3">
+        <div class="col-md-2">
+          <div class=" p-2 logos_educ ">
+            <img class="img_educ" [src]="educacion.logo" alt="logo intitución">
+          </div>
+        </div>
+
+        <div class="col-md-8 pt-3 pb-3">
+          <div class="d-flex align-items-center">
+            <h4 class="font-weight-bold">{{educacion.institucion}}</h4>
+            <div class="btn-edit trash ps-5 btn-show">
+              <a href="#" class="btn-right"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-edicion-edu"
+              >
+                <i class="fa fa-solid fa-pen edit-fa"></i>
+              </a>
+              <a href="#" class="btn-right"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-eliminar"
+              >
+                <i class="fa fa-solid fa-trash edit-fa"></i>
+              </a>
+            </div>
+          </div>
+          <p class="h6">{{educacion.curso}}</p>
+          <span><time>{{educacion.inicio}}</time><time>{{educacion.fin}}</time></span>
+          <div>
+            <button type="button" class="btn btn-primary btn-sm mt-2" [attr.data-bs-target]="'#myModal-' + i" data-bs-toggle="modal">
+              Certificado
+            </button>
+          </div>
+        </div>
+
+    </div>
+    <!-- Modal Certificado-->
+    <div class="modal" [id]="'myModal-' + i">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content text-center">
+          <img [src]="educacion.certificado" alt="Certificado">
+        </div>
+      </div>
+    </div>
+
+    </li>
+  </ul>
+
+  </div>

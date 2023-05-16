@@ -1,0 +1,60 @@
+<section class="card border-0 shadow-lg p-4 mb-4 bg-white">
+  <div class="container mt-2">
+    <h3 class="h2 pb-3 pt-3 text-primary text-center">
+      <i class="fa-solid fa-star-of-life"></i>
+      Skills
+    </h3>
+
+    <!--Boton agregar nuevo skill-->
+    <div class="btn-edit btn-show">
+      <a href="#" class="btn-right"
+        data-bs-toggle="modal"
+        data-bs-target="#modal-agregar-ski"
+      >
+        <i class="fa fa-plus edit-fa">
+        </i>
+      </a>
+    </div>
+
+
+    <div class="container">
+      <div class="row fila_uno pt-5 mx-auto">
+        <div class=" text-center p-3">
+          <ul>
+            <li *ngFor="let habilidad of ski; even">
+              <div class="p-4">
+
+                <i class="{{habilidad.icono}} {{habilidad.color}} hards"></i>
+
+                <!--Botones editar y eliminar skills-->
+                <div class="btn-edit trash ps-5 btn-show">
+                  <a href="#" class="btn-right"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-edicion-ski"
+                  >
+                    <i class="fa fa-solid fa-pen edit-fa"></i>
+                  </a>
+                  <a href="#" class="btn-right"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-eliminar"
+                  >
+                    <i class="fa fa-solid fa-trash edit-fa"></i>
+                  </a>
+                </div>
+
+                <h5>{{habilidad.lenguaje}}</h5>
+                <div class="progress">
+                  <div class="progress-bar pb-{{habilidad.progreso}}">{{habilidad.progreso}}%</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+

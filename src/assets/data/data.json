@@ -1,0 +1,227 @@
+{
+  "datos":{
+    "nombre": "Marcos ",
+    "apellido": "Martinez",
+    "img": "assets/mifoto.jpg",
+    "ubication": "Córdoba, Argentina",
+    "movil": "351 255-1058 (Móvil)",
+    "mail": "mdmgn09@gmail.com",
+    "titulo": "Full Stack Developer Jr",
+    "fondo": "assets/fondo.jpg",
+    "copyright":"Todos los derechos reservados por Marcos Daniel Martinez - 2022",
+    "linkedin": "https://www.linkedin.com/in/marcos-daniel-mart%C3%ADnez-5a494724a/",
+    "github":"https://github.com/MarcosDanielM",
+    "baricon": "assets/ap-icon.png",
+    "descripcion" : "Hola, soy Marcos, Full Stack Developer Jr de Córdoba, Argentina. Apasionado por la programación, el diseño web y la computación en general. Mi objetivo es crecer en el mundo del desarrollo web, aplicando mis conocimientos y actualizandome en las nuevas tecnologias. Cuando no estoy codeando, me gusta disfrutar tiempo de calidad con mi esposa y mis hijos perrunos. Además, disfruto de escribir y leer."
+  },
+
+  "experience": [
+      {
+        "id":"1",
+        "company": "Apex America BPO",
+        "position": "Atencion al cliente Telefónica de España, jornada completa",
+        "description": "Atención al público telefónicamente, asesoramiento sobre facturación y productos.",
+        "start": "Agosto, 2008",
+        "end": "Abril, 2010",
+        "logo":"assets/apex_america.png"
+      },
+      {
+        "id":"2",
+        "company": "Apex America BPO",
+        "position": "Área de reclutamiento y Selección, jornada completa",
+        "description": "Reclutamiento de Personal, Manejo de Base de Datos y selección de candidatos.",
+        "start": "Agosto, 2011",
+        "end": "Noviembre, 2011",
+        "logo":"assets/apex_america.png"
+      },
+      {
+        "id":"3",
+        "company": "Apex America BPO",
+        "position": "Soporte Técnico, jornada completa",
+        "description": "Atención en servicio técnico, soporte de modems portables 3G, celulares, smartphones y routers de fibra óptica",
+        "start": "Abril, 2010",
+        "end": "Actualidad",
+        "logo":"assets/apex_america.png"
+      }
+    ],
+
+  "education": [
+     {
+        "id":"1",
+        "school":"Plan Argentina Programa",
+        "course":"#SeProgramar",
+        "start":"",
+        "end":"2022",
+        "img" : "assets/argepro.png",
+        "certificado":"assets/certificadoAPSP.png"
+     },
+     {
+        "id":"2",
+        "school":"Plan Argentina Programa",
+        "course":"#YoProgramo",
+        "start":"2022",
+        "end":" - 2023",
+        "img" : "assets/argenpro4.png",
+        "certificado":"assets/certificadoAPYP.png"
+     },
+     {
+        "id":"3",
+        "school":"Google Activate",
+        "course":"Introduccion al Desarrollo Web I",
+        "start":"",
+        "end":"2022",
+        "img" : "assets/gactivate.png",
+        "certificado":"assets/certificadoGA1.png"
+     },
+     {
+        "id":"4",
+        "school":"Google Activate",
+        "course":"Introduccion al Desarrollo Web II",
+        "start":"2022",
+        "end":" - 2023",
+        "img" : "assets/gactivate.png",
+        "certificado":"assets/certificadoGA2.png"
+     },
+     {
+        "id":"5",
+        "school":"Argentina Programa 4.0 - TICMAS",
+        "course":"Primeros pasos del desarrollo frontend",
+        "start":"",
+        "end":"2023",
+        "img" : "assets/argenpro4.png",
+        "certificado":"assets/certificadoAP4T.png"
+     }
+   ],
+
+
+  "skillsFrontEnd": [
+    {
+      "id":"1",
+      "lenguaje":"HTML5",
+      "progreso":"85",
+      "icon" : "fa fa-html5",
+      "color" : "html5"
+    },
+    {
+      "id":"2",
+      "lenguaje":"CSS3",
+      "progreso":"85",
+      "icon" : "fa fa-css3",
+      "color" : "css3"
+    },
+    {
+      "id":"3",
+      "lenguaje" : "SASS",
+      "progreso":"65",
+      "icon" : "fa-brands fa-sass",
+      "color" : "sass"
+    },
+    {
+      "id":"4",
+      "lenguaje" : "Bootstrap5",
+      "progreso":"85",
+      "icon" : "fa-brands fa-bootstrap",
+      "color" : "bootstrap5"
+    },
+    {
+      "id":"5",
+      "lenguaje" : "JavaScript",
+      "progreso":"75",
+      "icon" : "fa-brands fa-square-js",
+      "color" : "js_logo"
+    },
+    {
+      "id":"6",
+      "lenguaje" : "Angular",
+      "progreso":"75",
+      "icon" : "fa-brands fa-angular",
+      "color" : "angular"
+    }
+
+
+  ],
+
+  "skillsBackEnd": [
+    {
+      "id":"7",
+      "lenguaje":"git",
+      "progreso":"90",
+      "icon" : "fa fa-git",
+      "color" : "git-color"
+    },
+    {
+      "id":"8",
+      "lenguaje":"GITHUB",
+      "progreso":"80",
+      "icon" : "fa-brands fa-github",
+      "color" : " "
+    },
+    {
+      "id":"9",
+      "lenguaje" : "NetBeans",
+      "progreso":"75",
+      "logo" : "assets/skills/netBeans-logo.png",
+      "size" : "tec_logo"
+    },
+    {
+      "id":"10",
+      "lenguaje" : "MySQL",
+      "progreso":"80",
+      "logo" : "assets/skills/mysql-logo.png",
+      "size" : "tec_logo"
+    },
+    {
+      "id":"11",
+      "lenguaje" : "Spring Boot",
+      "progreso":"80",
+      "logo" : "assets/skills/springboot-logo.png",
+      "icon" : "fa fa-css3-alt",
+      "color" : "springboot",
+      "size" : "tec_logo"
+    },
+    {
+      "id":"12",
+      "lenguaje" : "node js",
+      "progreso":"75",
+      "icon" : "fa-brands fa-node-js",
+      "color" : "nodejs"
+    }
+
+  ],
+  "proyects" : [
+    {
+      "id":"1",
+      "titulo": "Portfolio Web",
+      "realizacion" : "2023",
+      "imagen": "assets/portfolioimg.png",
+      "descripcion" : "Sitio web front-end basado en Angular, utilizando tecnologías modernas para crear una experiencia de usuario fluida y atractiva. Implementamos un diseño responsivo para asegurarnos de que el sitio se adapte perfectamente a cualquier dispositivo.",
+      "codigo" : "https://github.com/MarcosDanielM/Portfolio_Front_End",
+      "demo": "#",
+      "expanded": "false"
+    },
+    {
+      "id":"2",
+      "titulo": "Calculadora",
+      "realizacion" : "2023",
+      "imagen": "assets/proyect-calculator.png",
+      "descripcion" : "Calculadora web totalmente funcional utilizando HTML, CSS y Javascript. La aplicación permite realizar operaciones matemáticas básicas y avanzadas, con una interfaz de usuario intuitiva y atractiva.",
+      "codigo" : "https://github.com/MarcosDanielM/Calculadora-JS",
+      "demo" : "https://marcosdanielm.github.io/Calculadora-JS/",
+      "expanded": "false"
+    },
+    {
+      "id":"3",
+      "titulo": "Portfolio Web",
+      "realizacion" : "2023",
+      "imagen": "assets/proyect-porfoliootro.png",
+      "descripcion" : "Portfolio web interactivo y altamente personalizado utilizando HTML, CSS y Javascript. Además de ser totalmente responsive, también integramos una función de modo oscuro para mejorar la accesibilidad y la experiencia del usuario.",
+      "codigo" : "https://github.com/MarcosDanielM/Proyecto_final_integrador/",
+      "demo" : "https://marcosdanielm.github.io/Proyecto_final_integrador/",
+      "expanded": "false"
+    }
+  ]
+
+}
+
+
+

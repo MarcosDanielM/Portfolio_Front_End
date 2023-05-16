@@ -1,0 +1,135 @@
+<section class="card p-0 border-0 mb-4 shadow-lg bg-white"> <!--Listo-->
+
+  <div class="m-0 p-0 img-fluid" id="profile-background">
+    <img id="banner" [src]="persona.banner" alt="fondo porfolio">
+    <div class="btn-edit btn-edit-fondo">
+      <a href="#" class="btn-right btn-show"
+        data-bs-toggle="modal"
+        data-bs-target="#modal-fondo">
+        <i
+          class="fa fa-solid fa-pen edit-fa">
+        </i>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="row m-3">
+    <div class="col-md-4 p-3">
+      <div style="position: relative;">
+        <img class="profile-image rounded-pill mx-auto d-block img-fluid"
+        [src]="persona.img"
+        alt="foto de Marcos Martinez"
+        >
+        <div class="btn-edit about_edit_button btn-show" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <a href="#" class="btn-right"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-img"
+          >
+            <i
+              class="fa fa-solid fa-pen edit-fa">
+            </i>
+          </a>
+        </div>
+      </div>
+
+      <div id="info-data">
+        <div class="btn-edit">
+          <a href="#" class="btn-right btn-show"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-edicion"
+          >
+            <i
+              class="fa fa-solid fa-pen edit-fa">
+            </i>
+          </a>
+        </div>
+
+
+
+        <div class="d-flex flex-column justify-content-center">
+          <h1 class="h2 text-primary text-center"> {{persona.nombre}}</h1>
+          <div class="pt-2 pb-2" id="info-title">
+            <h5 class="text-center">{{persona.titulo}}</h5>
+          </div>
+          <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <div class="pt-3 pb-3" id="info-contact">
+              <div class="d-flex justify-content-between">
+                <button type="button"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#demo"
+              >
+                Información de contacto
+              </button>
+              </div>
+
+              <div class="collapse p-2" id="demo" >
+                <p>
+                  <i class="fa-solid fa-phone"></i>
+                  {{persona.celular}}
+                </p>
+                <p>
+                  <i class="fa-solid fa-envelope"></i>
+                  {{persona.email}}
+                </p>
+                <p>
+                  <i class="fa-solid fa-house"></i>
+                  {{persona.ubicacion}}
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="col-md-8 p-3 about_con">
+      <div class="d-flex align-items-center">
+
+        <h3 class="mb-2">Quien soy...</h3>
+        <div class="btn-edit trash btn-show">
+          <a href="#" class="btn-right"
+          data-bs-toggle="modal"
+          data-bs-target="#modal-descripcion"
+          >
+            <i
+              class="fa fa-solid fa-pen edit-fa">
+            </i>
+          </a>
+          <a href="#" class="btn-right"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-eliminar"
+          >
+            <i
+              class="fa fa-solid fa-trash edit-fa">
+            </i>
+          </a>
+        </div>
+
+      </div>
+
+      <p class="about mx-auto">{{persona.sobreMi}}</p>
+
+    </div>
+
+  </div>
+
+<!--Modal ingreso fondo --->
+<!-- Modal ingreso img --->
+
+<!--modal edicion -->
+
+<!--modal edicion descripcion-->
+
+<!--Modal eliminar-->
+<app-modal-eliminar></app-modal-eliminar>
+</section>

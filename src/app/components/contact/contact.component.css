@@ -1,0 +1,28 @@
+/*-------------header inferior-----------------*/
+
+#banner{
+  border-radius: 32px 32px 0px 0px;
+  width: 100%;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-top: -110px;
+  z-index: 1;
+}
+
+.about_con {
+  text-align: justify;
+  padding: 2%;
+}
+
+.btn-edit-fondo {
+
+  position: absolute;
+  top: 10%;
+  left: 96%;
+  transform: translate(-50%, -50%);
+
+}

@@ -1,0 +1,9 @@
+.mr-auto{
+  margin-right: 0!important;
+  margin-left: auto!important;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  justify-content: flex-end;
+}

@@ -1,0 +1,61 @@
+<section class="card border-0 shadow-lg p-4 mb-4 bg-white"><!--Listo-->
+  <div class="container mt-2">
+    <h3 class="h2 pb-3 pt-3 text-primary text-center">
+      <i class="fa-solid fa-briefcase"></i>
+    Experiencia
+    </h3>
+
+    <!--Boton para agregar dato-->
+    <div class="btn-edit">
+      <a href="#" class="btn-right btn-show"
+          data-bs-toggle="modal"
+          data-bs-target="#modal-agregar-ex">
+        <i class="fa fa-plus edit-fa">
+        </i>
+      </a>
+    </div>
+
+    <div>
+      <ul>
+        <li *ngFor="let experiencia of  expe">
+          <div class="mt-5 mb-5 ">
+            <div class="row d-flex ps-3 pe-3">
+              <div class="col-md-2 p-2 logos_educ">
+                <img class="img_educ rounded-pill" [src]="experiencia.logo" alt="logo empresa">
+              </div>
+              <div class="col-md-8 educa">
+                <h4>{{experiencia.empresa}}</h4>
+
+                <p class="h6">{{experiencia.posicion}} </p>
+                <p>{{experiencia.tareas}}</p>
+                <span>{{experiencia.inicio}} - {{experiencia.fin}}</span>
+              </div>
+              <!--Botones para editar y eliminar-->
+              <div class="col-md-2 btn-edit trash btn-show">
+                <a href="#" class="btn-right"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-edicion-ex"
+                >
+                  <i
+                    class="fa fa-solid fa-pen edit-fa">
+                  </i>
+                </a>
+                <a href="#" class="btn-right"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-eliminar"
+                >
+                  <i class="fa fa-solid fa-trash edit-fa"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Modal eliminar-->
+</section>
